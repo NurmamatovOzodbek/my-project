@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #131518;
+  font-family: 'Overpass', sans-serif;
+}
+main{
+  width: 100%;
+  max-width: 412px;
+  padding: 32px;
+  background: #181E27;
+  border-radius: 30px;
+
+  display: flex;
+  gap: 30px;
+
+  .content__about{
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    gap: 7px;
+    h1{
+      font-size: 28px;
+      font-weight: 700;
+      color: white;
+    }
+    p{
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 24px;
+      color: #969FAD;
+    }
+  }
+  .wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: flex-start;
+    gap: 24px;
+    .star{
+      width: 48px;
+      height: 48px;
+      border-radius: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 6px;
+      user-select: none;
+      background: #262E38;
+    }
+
+    .btn__number{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      gap: 6px;
+      align-items: center;
+      margin-bottom: 8px;
+      user-select: none;
+      .btn__one{
+        width: 51px;
+        height: 51px;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #262e38;
+        cursor: pointer;
+        span{
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 24px;
+          letter-spacing: 0.2px;
+          color: #7C8798;
+        }
+        &:hover{
+          background: #7C8798;
+          span{
+            color: white;
+          }
+        }
+      }
+    }
+    button{
+      width: 100%;
+      padding: 11px 0;
+      border-radius: 22.5px;
+      background: #FC7614;
+      cursor: pointer;
+      user-select: none;
+
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: white;
+      &:hover{
+        background: white;
+        color: #FC7614;
+      }
+    }
+  }
+  .inner{
+    button{
+      width: 160px;
+      padding: 11px 0;
+      border-radius: 22.5px;
+      background: #FC7614;
+      cursor: pointer;
+      user-select: none;
+
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: white;
+      &:hover{
+        background: white;
+        color: #FC7614;
+      }
+    }
+    .error{
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 25px;
+      p{
+        text-align: center;
+        font-size: 20px;
+        color: white;
+      }
+
+    }
+    .correct{
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      gap: 36px;
+      img{
+        user-select: none;
+      }
+      .checked{
+        width: 100%;
+        max-width: 193px;
+        padding: 4px 0;
+        background: #262E38;
+        border-radius: 22.5px;
+        text-align: center;
+        p{
+          font-size: 15px;
+          font-weight: 400;
+          line-height: 24px;
+          color: #FC7614;
+          span{
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 24px;
+            color: #FC7614;
+          }
+        }
+      }
+      .content__about{
+        align-items: center;
+        text-align: center;
+      }
+    }
+  }
+}
